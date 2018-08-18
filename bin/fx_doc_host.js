@@ -13,6 +13,7 @@ program.
     option('--tmp <tmp>', 'Where to store document files').
     option('--port <port>', 'Override listen port of master site').
     option('--doc-port <doc_port>', 'Override listen port of document sites').
+    option('--address <address>', 'Override address of document sites').
     action(cli_start);
 
 program.parse(process.argv);
@@ -31,6 +32,7 @@ function cli_start(config_path, opts) {
     conf.port = opts.port ? parseInt(opts.port) : conf.port;
     conf.doc_port = opts.docPort ? parseInt(opts.docPort) : conf.doc_port;
     conf.doc_port = conf.doc_port ? conf.doc_port : 8081;
+    conf.address = opts.address ? opts.address : conf.address;
     conf.address = conf.address ? conf.address : ip.address();
 
     cli_start_run(dest_conf, conf).

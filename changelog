@@ -13,4 +13,9 @@ v0.5.0
 ======
 
 * Fix - Incorrect doc_port option.
-* Add - Specific address of documents sites.
+* Add - Specific address of document sites.
+
+v0.6.0
+======
+
+* Add - Override address of document sites.

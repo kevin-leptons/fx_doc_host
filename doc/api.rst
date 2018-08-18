@@ -37,6 +37,8 @@ Options
   of master site.
 * ``--doc-port``, default is value of configuration file. Override listen port
   of document site.
+* ``--address``, default is value of configuration file. Override address
+  of document sites.
 
 Example
 -------
