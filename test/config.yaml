@@ -1,5 +1,6 @@
 title: fx_doc_hosting - Hosting for multi fx document
-port: 10000
+port: 9001
+doc_port: 9002
 org:
     name: Stark Industries
     url: https://en.wikipedia.org/wiki/Stark_Industries

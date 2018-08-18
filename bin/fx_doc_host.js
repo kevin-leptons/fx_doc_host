@@ -46,7 +46,7 @@ async function cli_start_run(dest_conf, conf) {
         docs.push(built_doc);
     }
 
-    let sites = await site.listen(docs, conf.auth, conf.port + 1);
+    let sites = await site.listen(docs, conf.auth, conf.doc_port);
     let root_conf = {
         title: conf.title,
         port: conf.port,

@@ -10,6 +10,7 @@ Configuration File
     =================== =========== =========== ===============================
     title               string                  Title of hosting
     port                number      8080        Master site port
+    doc_port            number      8081        Begin port of document site
     auth                object                  Authentication credentials
     auth.user           string                  Username
     auth.password       string                  Password

@@ -35,6 +35,8 @@ Options
   repositories and documents files is store.
 * ``--port``, default is value of configuration file. Override listen port
   of master site.
+* ``--doc-port``, default is value of configuration file. Override listen port
+  of document site.
 
 Example
 -------
