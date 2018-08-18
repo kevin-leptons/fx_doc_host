@@ -1,6 +1,6 @@
 {
   "name": "fx_doc_host",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Hosting for multi fx document",
   "bin": {
     "fx-doc-host": "bin/fx_doc_host.js"
