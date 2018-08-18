@@ -2,6 +2,7 @@
 
 const path = require('path');
 const program = require('commander');
+const ip = require('ip');
 
 const {config, doc, site, master_site} = require('../lib');
 
@@ -11,6 +12,7 @@ program.
     option('--no-build', 'Do not build document').
     option('--tmp <tmp>', 'Where to store document files').
     option('--port <port>', 'Override listen port of master site').
+    option('--doc-port <doc_port>', 'Override listen port of document sites').
     action(cli_start);
 
 program.parse(process.argv);
@@ -27,6 +29,9 @@ function cli_start(config_path, opts) {
 
     let conf = config.load(config_path);
     conf.port = opts.port ? parseInt(opts.port) : conf.port;
+    conf.doc_port = opts.docPort ? parseInt(opts.docPort) : conf.doc_port;
+    conf.doc_port = conf.doc_port ? conf.doc_port : 8081;
+    conf.address = conf.address ? conf.address : ip.address();
 
     cli_start_run(dest_conf, conf).
     then((addr) => {
@@ -46,7 +51,7 @@ async function cli_start_run(dest_conf, conf) {
         docs.push(built_doc);
     }
 
-    let sites = await site.listen(docs, conf.auth, conf.doc_port);
+    let sites = await site.listen(docs, conf.auth, conf.doc_port, conf.address);
     let root_conf = {
         title: conf.title,
         port: conf.port,

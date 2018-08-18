@@ -9,6 +9,7 @@ Configuration File
     Attribute           Type        Default     Description
     =================== =========== =========== ===============================
     title               string                  Title of hosting
+    address             string      Host's IP   Accessing address of documents
     port                number      8080        Master site port
     doc_port            number      8081        Begin port of document site
     auth                object                  Authentication credentials
