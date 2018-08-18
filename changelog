@@ -8,3 +8,9 @@ v0.4.0
 ======
 
 * Fix - Incorrect URL of document sites.
+
+v0.5.0
+======
+
+* Fix - Incorrect doc_port option.
+* Add - Specific address of documents sites.
