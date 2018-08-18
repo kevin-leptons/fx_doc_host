@@ -1,0 +1,10 @@
+title: fx_doc_hosting - Hosting for multi fx document
+port: 10000
+org:
+    name: Stark Industries
+    url: https://en.wikipedia.org/wiki/Stark_Industries
+auth:
+    user: root
+    password: root
+sites:
+    - url: https://github.com/kevin-leptons/fx-doc.git

@@ -1,0 +1,34 @@
+fx_doc_host
+***********
+
+Hosting for multi fx document.
+
+Devlopment
+==========
+
+Install pre required packages.
+
+* Node.js [1].
+* fx-doc, latest version as possible [2].
+* git, then setup SSH key to access document repositories [3].
+
+Initialize project.
+
+    $ npm install
+
+Run testing. This test will be block until it is kill.
+
+    $ npm run test
+
+Build document.
+
+    $ npm run doc
+    $ npm run doc-serve
+
+Links
+=====
+
+* [1] https://nodejs.org/en/
+* [2] https://www.python.org/
+* [3] https://pypi.org/project/fx-doc/
+* [4] https://git-scm.com/

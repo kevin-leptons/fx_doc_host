@@ -1,0 +1,40 @@
+{
+  "name": "fx_doc_host",
+  "version": "0.1.0",
+  "description": "Hosting for multi fx document",
+  "bin": {
+    "fx-doc-host": "bin/fx_doc_host.js"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.0",
+    "commander": "^2.17.1",
+    "express": "^4.16.3",
+    "js-yaml": "^3.12.0",
+    "pug": "^2.0.3",
+    "shelljs": "^0.8.2"
+  },
+  "devDependencies": {
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "test": "node bin/fx_doc_host.js start test/config.yaml",
+    "doc": "fx-doc build doc dest/doc --no-pdf",
+    "doc-serve": "fx-doc serve dest/doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin-leptons/fx_doc_host.git"
+  },
+  "keywords": [
+    "hosting",
+    "document",
+    "multi",
+    "fx-doc"
+  ],
+  "author": "Kevin Leptons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevin-leptons/fx_doc_host/issues"
+  },
+  "homepage": "https://github.com/kevin-leptons/fx_doc_host#readme"
+}

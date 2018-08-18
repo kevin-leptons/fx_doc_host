@@ -1,0 +1,18 @@
+doctype 5
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+        title= title
+        link(href='/asset/main.css', rel='stylesheet')
+        script(src='/asset/main.js', type='text/javascript')
+    body
+        div(class='container')
+            block body-content
+
+            div(class='footer')
+                div
+                    a(href=org.url, target='_blank')= org.name
+                div
+                    a(href='https://github.com/kevin-leptons/fx_doc_host', target='_blank') Powered by fx_doc_host

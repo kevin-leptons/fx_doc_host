@@ -1,0 +1,11 @@
+node_modules/
+tmp/
+dest/
+dist/
+doc/
+repo/
+test/
+*.swp
+*.swo
+package-lock.json
+.DS_Store

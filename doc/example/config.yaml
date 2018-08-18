@@ -1,0 +1,16 @@
+title: fx_hoc_hosting - Hosting for multi fx document
+
+# port which master site listen on
+port: 8080
+
+auth:
+    # user and password which is uses to access documents
+    user: root
+    password: root
+sites:
+    - url: https://github.com/kevin-leptons/fx-doc.git
+      branch: master
+      doc: doc
+    - url: https://github.com/kevin-leptons/fx-doc.git
+      branch: master
+      doc: doc

@@ -1,0 +1,19 @@
+extends layout.pug
+
+block body-content
+    div(class='list-project')
+        h1= title
+
+        table
+            tr
+                th Version
+                th Name
+                th License
+                th Author
+            each site in sites
+                tr
+                    td= site.version
+                    td
+                        a(href=site.url,  target='_blank')= site.name
+                    td= site.license
+                    td= site.author
